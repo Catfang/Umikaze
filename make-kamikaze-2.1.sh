@@ -470,6 +470,10 @@ Check that nothing is printing before any CPU/disk intensive operations!
 EOL
 }
 
+change_root_passwd_first_login() {
+	chage -d 0 root
+}
+
 dist() {
 	port_forwarding
 	install_dependencies
